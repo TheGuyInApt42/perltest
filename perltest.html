@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='./perltest.js'></script>
+</head>
+<body>
+  <div id='error'>
+  </div>
+
+  <button id='new_btn' onclick=displayAdd()>NEW</button>
+  <button id='add_btn' style="display:none" onclick=addAppt()>ADD</button>
+  <button id='cancel_btn' style="display:none" onclick=cancelAdd()>CANCEL</button>
+  <br>
+  <br>
+  <form id='addForm' style='display:none'>
+    <input id='date' name='date' type='date' min='2018-05-12' required><br>
+    <input id='time' name='time' type='time' required><br>
+    <input id='desc' name='desc' placeholder='Description' required>
+    <input type='submit' style='display:none'>
+    <br>
+  </form>
+  <br>
+  <br>
+  <input id='search' name='search_txt' type='search'></input>
+  <button id='search_btn'>SEARCH</button>
+  <br>
+  <br>
+
+  <table>
+    <tr>
+      <th>DATE</th>
+      <th>TIME</th>
+      <th>DESCRIPTION</th>
+    </tr>
+    <tr></tr>
+  </table>
+
+
+
+</body>
+</html>
+
